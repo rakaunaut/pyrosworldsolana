@@ -21,16 +21,24 @@ export const Features1 = () => {
         <div className="flex flex-wrap items-center 2xl:w-[1450px] xl:w-[1300px] w-11/12 mx-auto md:pl-4 xl:pr-16 xl:pl-16">
           <div className="w-full lg:w-1/2 mb-12 lg:mb-0">
             <div className="mx-auto lg:mx-auto w-11/12 sm:w-4/5 md:w-3/4 lg:w-unset">
-              <span className="block-subtitle">Embrace Innovation</span>
-              <h2 className="mt-6 mb-8 text-4xl lg:text-5xl block-big-title">
-                Unlike any tool you used before
+              <span className="block-subtitle">Take your chance</span>
+              <h2 className="mt-6 mb-8 text-4xl lg:text-5xl block-big-title uppercase">
+               Mega token <br/>pre-sale
               </h2>
               <p className="mb-10 text-secondaryText leading-loose">
-                Discover a new level of data analysis with our innovative and
-                user-friendly platform. Transform your business needs with
-                actionable insights.
+              Buy $PYRO Tokens to gear up
+for the next level of P2E.
+
+100M PYRO (10%) will be allocated among token pre-Sale participants.
               </p>
-              <ul className="mb-6 text-primaryText">
+              <button
+              className="w-[210px] h-12 contained-button mr-10 "
+              onClick={() => setIsModalOpen(true)}
+              aria-label="Get started"
+            >
+              Go to Pre-Sale
+            </button>
+              {/* <ul className="mb-6 text-primaryText">
                 <li className="mb-4 flex">
                   <CheckArrowIcon />
                   <span>Real-time data visualization</span>
@@ -43,7 +51,7 @@ export const Features1 = () => {
                   <CheckArrowIcon />
                   <span>Seamless integration with APIs</span>
                 </li>
-              </ul>
+              </ul> */}
             </div>
           </div>
           <div className="w-3/4 mx-auto lg:w-1/2 flex flex-wrap lg:-mx-4 sm:pr-8 lg:pt-10 justify-center lg:pl-4 xl:px-8">

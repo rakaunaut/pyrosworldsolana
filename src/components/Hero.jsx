@@ -2,7 +2,8 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 
 import { InvitationModal } from "./InvitationModal";
-import dashboard from "../assets/images/dashboard.jpg";
+import trailerWebm from "../assets/videos/PyroTrailer.webm";
+import trailerMP4 from "../assets/videos/PyroTrailer.mp4";
 
 export const Hero = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -46,7 +47,7 @@ export const Hero = () => {
           </h2>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, y: 10 }}
+         initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.15 }}
         >
@@ -73,12 +74,18 @@ export const Hero = () => {
           transition={{ duration: 0.5, delay: 0.15 }}
         >
           <div className="relative w-screen flex justify-center ">
-            <img
+            {/* <img
               src={dashboard.src}
               alt="Dashboard image"
               className="w-4/5 2xl:w-[1200px] mx-auto absolute z-10 rounded-xl main-border-gray hero-dashboard-border-gradient lg:top-6 xl:top-0"
-            />
-          </div>
+            /> */}
+
+
+            <video autoPlay muted  className="w-4/5 2xl:w-[1200px] mx-auto absolute z-10 rounded-xl -mt-32 lg:top-6 xl:top-0">
+            <source src={trailerMP4} type='video/mp4; codecs="hvc1"' />
+            <source src={trailerWebm} type="video/webm" />
+      </video>
+      </div>
         </motion.div>
         <div className="relative w-screen flex justify-center ">
           <div className="shape-divider-bottom-1665343298 mt-4 sm:mt-16 md:mt-52 hidden lg:block">

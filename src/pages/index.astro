@@ -17,6 +17,7 @@ import { ScrollUpButton } from '../components/ScrollUpButton'
 
 /* Import Svelte Components */
 import Test from '../components/Test.svelte'
+import Tokenomics from '../components/Tokenomics.svelte'
 
 import '../styles/Theme.css'
 import '../styles/Diagonals.css'
@@ -25,12 +26,13 @@ import '../styles/Diagonals.css'
 <Layout title="Tailcast">
   <Navbar client:load />
   <Hero client:load />
-  
+
   <Test client:load/>
 
   <Features1 client:load />
   <Features2 client:load />
-  <FeaturesDiagonal client:load />
+  <!-- <FeaturesDiagonal client:load /> -->
+   <Tokenomics client:load />
   <Pricing client:load />
   <Brands client:load />
   <Testimonials client:load />
