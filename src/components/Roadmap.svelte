@@ -7,7 +7,7 @@ import FadeInComponent from './FadeInComponent.svelte';
   </script>
 
 <FadeInComponent sectionName="roadmap">
-  <section id="roadmap" class="relative w-full bg-bgDark1 mt-12 sm:mt-24 mb-12 lg:my-20 lg:mb-24 pt-4">
+  <section id="roadmap" class="relative w-full bg-bgDark1 mb-12 lg:my-20 lg:mb-24 pt-24">
 
       <div class="container flex flex-wrap items-start 2xl:w-[1450px] xl:w-[1300px] w-11/12 mx-auto sm:pl-4 xl:pr-16 xl:pl-16">
  
@@ -154,7 +154,7 @@ import FadeInComponent from './FadeInComponent.svelte';
           </div>
         </div> 
 
-        <div class="relative sm:sticky sm:top-20 w-full lg:w-1/2 mb-12 lg:mb-0 xl:pl-8">
+        <div class="relative lg:sticky sm:top-20 w-full lg:w-1/2 mb-12 lg:mb-0 xl:pl-8">
           <div class="mx-auto lg:mx-auto w-11/12 sm:w-4/5  lg:w-unset">
             <span class="block-subtitle">Roadmap</span>
             <h2 class="mt-6 mb-8 text-4xl lg:text-5xl block-big-title">

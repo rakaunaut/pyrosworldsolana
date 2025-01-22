@@ -23,7 +23,7 @@ export let img4; String;
             </h2>
           
           </div>
-          <div class="px-2 sm:px-0 flex 2xl:w-[1200px] lg:w-[1000px] xl:w-[1150px] flex-wrap sm:flex-nowrap gap-3 items-stretch h-auto px-2 sm:px-0">
+          <div class="flex 2xl:w-[1200px] lg:w-[1000px] xl:w-[1150px] flex-wrap sm:flex-nowrap gap-3 items-stretch h-auto px-2 sm:px-0">
     
             <div class="flex flex-col bg-bgDark3 border border-primaryColor rounded-xl">
               <img src={img1} class="rounded-t-xl" alt="Game Insights"/>

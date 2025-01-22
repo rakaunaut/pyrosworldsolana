@@ -5,7 +5,7 @@
 
 <FadeInComponent sectionName="tokenomics">
 <section
-  class="relative lg:mb-16 w-full flex flex-col justify-center items-center bg-bgDark1"
+  class="relative lg:mb-16 w-full flex flex-col justify-center items-center bg-bgDark1 pt-24"
 >
 <div id="tokenomics" class="absolute top-32" ></div>
   <!-- <div class="shape-divider-bottom-1665696614">
@@ -29,7 +29,7 @@
       <!-- <div
         class="container flex w-full flex-col items-center lg:items-start lg:flex-row gap-20 z-10 sm:pl-10 sm:pr-10 pt-28 mx-auto justify-center"
       > -->
-        <div class="relative sm:sticky mb-16 sm:mb-0 top-20 z-20 w-full lg:mx-0">
+        <div class="relative lg:sticky mb-16 sm:mb-0 top-20 z-20 w-full lg:mx-0">
          <div class="block-subtitle text-center mb-5">Tokenomics</div>
           <svg
             class="sm:size-full size-8/12 mx-auto"

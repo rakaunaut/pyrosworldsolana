@@ -1,5 +1,5 @@
-<button disabled class="relative cursor-not-allowed rounded-md border border-white bg-slate-100/20 backdrop-blur-md p-3 hover:scale-105 transition hover:bg-slate-100/30 w-48 overflow-clip">
-    <div class="absolute top-5 -left-7 p-1 bg-red-500/85 text-gray-800 backdrop-blur-md -rotate-45 text-xs px-6 font-normal"> coming soon
+<button disabled class="relative cursor-not-allowed rounded-md border border-white bg-slate-100/20 backdrop-blur-md p-3 hover:scale-105 transition hover:bg-slate-100/30 w-40 overflow-clip">
+    <div class="absolute top-4 -left-6 p-1 bg-red-500/85 text-gray-800 backdrop-blur-md -rotate-45 text-[0.6em] sm:text-xs px-6 font-normal"> coming soon
 </div>
         <svg class="size-full" viewBox="0 0 221 51" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0.875566 2.14686C0.320961 2.71291 0 3.59421 0 4.73551V45.4452C0 46.5865 0.320961 47.4678 0.875566 48.0338L1.01245 48.1581L24.4097 25.355V24.8165L1.01245 2.0134L0.875566 2.14686Z" fill="white" />

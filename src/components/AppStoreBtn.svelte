@@ -1,7 +1,7 @@
-<button disabled class="relative cursor-not-allowed rounded-md border border-white bg-slate-100/20 backdrop-blur-md p-3 hover:scale-105 transition hover:bg-slate-100/30 w-48 overflow-clip">
+<button disabled class="relative cursor-not-allowed rounded-md border border-white bg-slate-100/20 backdrop-blur-md p-3 hover:scale-105 transition hover:bg-slate-100/30 w-40 overflow-clip">
 
-    <div class="absolute top-5 -left-7 p-1 bg-red-500/85 text-gray-800 backdrop-blur-md -rotate-45 text-xs px-6 font-normal"> coming soon
-    </div>          
+    <div class="absolute top-4 -left-6 p-1 bg-red-500/85 text-gray-800 backdrop-blur-md -rotate-45 text-[0.6em] sm:text-xs px-6 font-normal"> coming soon
+    </div>        
 
 <svg class="size-full" viewBox="0 0 229 62" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M36.711 29.0517C36.6506 22.364 42.204 19.1104 42.458 18.9589C39.3128 14.3877 34.438 13.7631 32.7249 13.7133C28.6307 13.2838 24.6592 16.1556 22.5736 16.1556C20.4463 16.1556 17.2346 13.7548 13.7731 13.8254C9.31869 13.8939 5.15156 16.4648 2.86609 20.4571C-1.85054 28.5973 1.66716 40.5597 6.18606 47.1395C8.44655 50.362 11.0879 53.96 14.5453 53.8335C17.9277 53.6944 19.1912 51.6838 23.2729 51.6838C27.3173 51.6838 28.5037 53.8335 32.0297 53.7525C35.6598 53.6944 37.9453 50.5155 40.1267 47.264C42.739 43.5705 43.788 39.933 43.8296 39.7463C43.7443 39.7172 36.7797 37.0675 36.711 29.0517Z"

@@ -17,7 +17,7 @@
             isVisible = false;
           }
         },
-        { threshold: 0.5 } // Der Schwellenwert für die Sichtbarkeit (10%)
+        { threshold: 0.25 } // Der Schwellenwert für die Sichtbarkeit (10%)
       );
       
       if (element) {

@@ -44,7 +44,7 @@
 <FadeInComponent sectionName="FAQ">
 <section
   id="FAQ"
-  class="relative -mt-8 sm:mt-0 pt-12 sm:pt-16 pb-16 bg-blueGray-50 overflow-hidden"
+  class="relative -mt-8 sm:mt-0 pt-24 pb-16 bg-blueGray-50 overflow-hidden"
 >
   <div
     class="relative z-10 container px-2 sm:px-8 lg:px-4 mx-auto w-11/12 sm:w-full"
