@@ -1,3 +1,11 @@
+/* Navbar */
+
+ /* Aktiver Menüpunkt */
+ div:target ~ nav div a[href*=":target"] {
+  background-color: #007BFF;
+  color: white;
+}
+
 /* Hero */
 
 .shape-divider-bottom-1665343298 {

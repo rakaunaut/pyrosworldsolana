@@ -1,43 +1,55 @@
 ---
-import Layout from '../layouts/Layout.astro'
+import Layout from "../layouts/Layout.astro";
 
-/* Import React Components */
-import { Hero } from '../components/Hero.jsx'
-import { Navbar } from '../components/Navbar.jsx'
-import { Features1 } from '../components/Features1.jsx'
-import { Features2 } from '../components/Features2.jsx'
-import { Testimonials } from '../components/Testimonials.jsx'
-import { FeaturesDiagonal } from '../components/FeaturesDiagonal.jsx'
-import { Pricing } from '../components/Pricing.jsx'
-import { FAQ } from '../components/FAQ.jsx'
-import { Brands } from '../components/Brands.jsx'
-import { Blog } from '../components/Blog'
-import { Footer } from '../components/Footer.jsx'
-import { ScrollUpButton } from '../components/ScrollUpButton'
+/* import React Components */
+import { ScrollUpButton } from "../components/ScrollUpButton";
+
+/* Import Images */
+
+import pyroLogo from "../assets/images/pyro-logo.png";
+import pyro1 from "../assets/images/pyro-01.png";
+import Img1 from "../assets/images/game-1.jpg";
+import Img2 from "../assets/images/game-2.jpg";
+import Img3 from "../assets/images/game-3.jpg";
+import Img4 from "../assets/images/game-4.jpg";
+
+/* Import Videos */
+
+import PyroVideoMP4 from "../assets/videos/PyroTrailer.mp4";
+import PyroVideoWEBM from "../assets/videos/PyroTrailer.webm";
 
 /* Import Svelte Components */
-import Test from '../components/Test.svelte'
-import Tokenomics from '../components/Tokenomics.svelte'
+import Navbar from "../components/Navbar.svelte";
+import Hero from "../components/Hero.svelte";
+import Footer from "../components/Footer.svelte";
+import Tokenomics from "../components/Tokenomics.svelte";
+import Roadmap from "../components/Roadmap.svelte";
+import PreSale1 from "../components/PreSale1.svelte";
+import GameInsights from "../components/GameInsights.svelte";
+import FAQ from "../components/FAQ.svelte";
 
-import '../styles/Theme.css'
-import '../styles/Diagonals.css'
+import "../styles/Theme.css";
+import "../styles/Diagonals.css";
+import { object } from "astro:schema";
 ---
 
-<Layout title="Tailcast">
-  <Navbar client:load />
-  <Hero client:load />
+<Layout title="Pyros World">
+  <Navbar logo={pyroLogo.src} client:load />
 
-  <Test client:load/>
+  <Hero webm={PyroVideoWEBM} mp4={PyroVideoMP4} client:load />
+  <PreSale1 img={pyro1.src} client:load />
+  <GameInsights
+    img1={Img1.src}
+    img2={Img2.src}
+    img3={Img3.src}
+    img4={Img4.src}
+    client:load
+  />
+  <Roadmap client:load />
+  <Tokenomics client:load />
+  <FAQ client:load />
 
-  <Features1 client:load />
-  <Features2 client:load />
-  <!-- <FeaturesDiagonal client:load /> -->
-   <Tokenomics client:load />
-  <Pricing client:load />
-  <Brands client:load />
-  <Testimonials client:load />
-  <Blog client:load />
-  <FAQ client:load /> 
-  <Footer />
+  <Footer logo={pyroLogo.src} />
+
   <ScrollUpButton client:load />
 </Layout>

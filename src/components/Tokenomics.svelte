@@ -1,11 +1,14 @@
 <script lang="ts">
+  import FadeInComponent from '../components/FadeInComponent.svelte'
   let number: number = 9;
 </script>
 
+<FadeInComponent sectionName="tokenomics">
 <section
-  class="lg:mb-16 w-full flex flex-col justify-center items-center bg-bgDark1"
+  class="relative lg:mb-16 w-full flex flex-col justify-center items-center bg-bgDark1"
 >
-  <div class="shape-divider-bottom-1665696614">
+<div id="tokenomics" class="absolute top-32" ></div>
+  <!-- <div class="shape-divider-bottom-1665696614">
     <svg
       data-name="Layer 1"
       xmlns="http://www.w3.org/2000/svg"
@@ -18,17 +21,18 @@
         class="bg-bgDark1 fill-bgDark1"
       ></path>
     </svg>
-  </div>
+  </div> -->
   <div>
     <div
-      class=" 2xl:w-[1150px] xl:w-[1050px] md:w-4/5 flex justify-between bg-bgDark1 pt-12 lg:pt-24 pb-8 lg:pb-20 mx-auto lg:flex-row flex-col"
+      class=" container flex gap-16 justify-between items-start bg-bgDark1 pt-12 lg:pt-24 pb-8 lg:pb-20 mx-auto lg:flex-row flex-col"
     >
-      <div
+      <!-- <div
         class="container flex w-full flex-col items-center lg:items-start lg:flex-row gap-20 z-10 sm:pl-10 sm:pr-10 pt-28 mx-auto justify-center"
-      >
-        <div class=" sticky-2 z-20 w-full max-w-lg mx-auto lg:mx-0">
+      > -->
+        <div class="relative sm:sticky mb-16 sm:mb-0 top-20 z-20 w-full lg:mx-0">
+         <div class="block-subtitle text-center mb-5">Tokenomics</div>
           <svg
-            class="size-full mx-auto"
+            class="sm:size-full size-8/12 mx-auto"
             viewBox="0 0 501 501"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +41,7 @@
               cx="250.5"
               cy="250.5"
               r="250.5"
-              fill="black"
+              fill="rgb(48 49 54 )"
               fill-opacity="0.65"
             />
 
@@ -161,112 +165,122 @@
             </defs>
           </svg>
         </div>
-        <div
-          class="flex flex-col gap-5 rounded-2xl bg-[rgba(0,0,0,.65)] p-5 max-w-xs w-full z-10"
-        >
-          <div
-            id="rewardsA"
-            class="relative flex gap-3 cursor-pointer hover:bg-yellow-200/10 transition"
-          >
-            <div id="rewardsAnchor" class="absolute h-20 -top-28"></div>
-            <div class="min-h-full min-w-4 max-w-4 bg-[#F7BA50]"></div>
-            <div class="flex flex-col text-slate-200">
-              <div class="text-2xl font-extrabold">42%</div>
-              <div class="text-lg font-bold">Rewards & P2E</div>
-              <div class="text-sm font-normal">
-                Long-term optimized in-game mechanics. PYRO token rewards ensure
-                gameplay excitement and sustainable incentives.
+        <div class="flex flex-col rounded-2xl p-5 max-w-2xl w-full z-10">
+
+          <div class="flex flex-wrap sm:flex-nowrap gap-5 mb-5">
+            <div class="flex w-full sm:w-1/2">
+              <div
+                class="flex flex-col rounded-xl p-4 bg-bgDark3 border border-stone-700 text-slate-200"
+              >
+                <div
+                  class="max-h-4  min-h-4 min-w-4 w-full mb-3 rounded-sm bg-[#F7BA50]"
+                ></div>
+                <div class="text-2xl font-extrabold">42%</div>
+                <div class="text-lg font-bold text-PrimaryText">
+                  Rewards & P2E
+                </div>
+                <div class="text-sm text-secondaryText">
+                  Long-term optimized in-game mechanics. PYRO token rewards
+                  ensure gameplay excitement and sustainable incentives.
+                </div>
+              </div>
+            </div>
+
+            <div class="flex w-full sm:w-1/2">
+              <div
+                class="flex flex-col rounded-xl p-4 bg-bgDark3 border border-stone-700 text-slate-200"
+              >
+                <div
+                  class="max-h-4 min-h-4 min-w-4 w-full mb-3 rounded-sm bg-[#B00404]"
+                ></div>
+                <div class="text-2xl font-extrabold">24%</div>
+                <div class="text-lg font-bold text-PrimaryText">
+                  Game Development
+                </div>
+                <div class="text-sm text-secondaryText">
+                  Whether it's the multi-player gamability or the in-game shop
+                  infrastructure: Pyros World LLC retains funds to expand and
+                  maintain its ecosystem.
+                </div>
               </div>
             </div>
           </div>
 
-          <div
-            id="devA"
-            class="relative flex gap-3 cursor-pointer hover:bg-[rgba(176,4,4,.2)] transition"
-          >
-            <div id="devAnchor" class="absolute h-20 -top-28"></div>
-            <div class="min-h-full min-w-4 max-w-4 bg-[#B00404]"></div>
-            <div class="flex flex-col text-slate-200">
-              <div class="text-2xl font-extrabold">24%</div>
-              <div class="text-lg font-normal">Game Development</div>
-              <div class="text-sm font-normal">
-                Whether it's the multi-player gamability or the in-game shop
-                infrastructure: Pyros World LLC retains funds to expand and
-                maintain its ecosystem.
+          <div class="flex flex-wrap sm:flex-nowrap gap-5 mb-5">
+            <div class="flex w-full sm:w-1/2">
+              <div
+                class="flex flex-col rounded-xl p-4 bg-bgDark3 border border-stone-700 text-slate-200"
+              >
+                <div
+                  class="max-h-4 min-h-4 min-w-4 w-full mb-3 rounded-sm bg-[#D84646]"
+                ></div>
+                <div class="text-2xl font-extrabold">10%</div>
+                <div class="text-lg font-bold text-PrimaryText">Marketing</div>
+                <div class="text-sm text-secondaryText">
+                  Partnerships, (cross-chain) incentivization, newcomer
+                  airdrops, beta user rewards, and many more.
+                </div>
+              </div>
+            </div>
+
+            <div class="flex w-full sm:w-1/2">
+              <div
+                class="flex flex-col rounded-xl p-4 bg-bgDark3 border border-stone-700 text-slate-200"
+              >
+                <div
+                  class="max-h-4 min-h-4 min-w-4 w-full mb-3 rounded-sm bg-[#F17979]"
+                ></div>
+                <div class="text-2xl font-extrabold">10%</div>
+                <div class="text-lg font-bold text-PrimaryText">Team</div>
+                <div class="text-sm text-secondaryText">
+                  More than two years of development and product design have
+                  been spent by our highly skilled team. Existing and new team
+                  members need to be incentivized.
+                </div>
               </div>
             </div>
           </div>
-
-          <div
-            id="marketingA"
-            class="relative flex gap-3 cursor-pointer hover:bg-[rgba(216,70,70,.2)] transition"
-          >
-            <div id="marketingAnchor" class="absolute h-20 -top-28"></div>
-            <div class="min-h-full min-w-4 max-w-4 bg-[#D84646]"></div>
-            <div class="flex flex-col text-slate-200">
-              <div class="text-2xl font-extrabold">10%</div>
-              <div class="text-lg font-normal">Marketing</div>
-              <div class="text-sm font-normal">
-                Partnerships, (cross-chain) incentivization, newcomer airdrops,
-                beta user rewards, and many more.
+          <div class="flex flex-wrap sm:flex-nowrap gap-5 mb-5 sm:mb-0">
+            <div class="flex w-full sm:w-1/2">
+              <div
+                class="flex flex-col rounded-xl p-4 bg-bgDark3 border border-stone-700 text-slate-200"
+              >
+                <div
+                  class="max-h-4 min-h-4 min-w-4 w-full mb-3 rounded-sm bg-[#F7A7A7]"
+                ></div>
+                <div class="text-2xl font-extrabold">10%</div>
+                <div class="text-lg font-bold text-PrimaryText">
+                  Token Pre-Sale
+                </div>
+                <div class="text-sm text-secondaryText">
+                  Interested users and supporters have the chance to obtain an
+                  exclusive PYRO allocation in the current pre-sale.
+                </div>
               </div>
             </div>
-          </div>
 
-          <div
-            id="teamA"
-            class="relative flex gap-3 cursor-pointer hover:bg-[rgba(241,121,121,.2)] transition"
-          >
-            <div id="teamAnchor" class="absolute h-20 -top-28"></div>
-            <div class="min-h-full min-w-4 max-w-4 bg-[#F17979]"></div>
-            <div class="flex flex-col text-slate-200">
-              <div class="text-2xl font-extrabold">10%</div>
-              <div class="text-lg font-normal">Team</div>
-              <div class="text-sm font-normal">
-                More than two years of development and product design have been
-                spent by our highly skilled team. Existing and new team members
-                need to be incentivized.
+           
+            <div class="flex w-full sm:w-1/2">
+              <div
+                class="flex flex-col rounded-xl p-4 bg-bgDark3 border border-stone-700 text-slate-200"
+              >
+                <div
+                  class="max-h-4 min-h-4 min-w-4 w-full mb-3 rounded-sm bg-[#E5E5E5]"
+                ></div>
+                <div class="text-2xl font-extrabold">4%</div>
+                <div class="text-lg font-bold text-PrimaryText">Advisors</div>
+                <div class="text-sm text-secondaryText">
+                  We relied on advisors for the strategic & executive setup of
+                  Pyros World - and we have greatly taken advantage of it.
+                </div>
               </div>
             </div>
-          </div>
-
-          <div
-            id="presaleA"
-            class="relative flex gap-3 cursor-pointer hover:bg-[rgba(247,167,167,.2)] transition"
-          >
-            <div id="presaleAnchor" class="absolute h-20 -top-28"></div>
-            <div class="min-h-full max-w-4 min-w-4 bg-[#F7A7A7]"></div>
-
-            <div class="flex flex-col text-slate-200">
-              <div class="text-2xl font-extrabold">10%</div>
-              <div class="text-lg font-normal">Token Pre-Sale</div>
-              <div class="text-sm font-normal">
-                Interested users and supporters have the chance to obtain an
-                exclusive PYRO allocation in the current pre-sale.
-              </div>
-            </div>
-          </div>
-
-          <div
-            id="advisorA"
-            class="relative flex gap-3 cursor-pointer hover:bg-slate-200/10 transition"
-          >
-            <div id="advisorAnchor" class="absolute h-20 -top-28"></div>
-            <div class="min-h-full max-w-4 min-w-4 bg-[#E5E5E5]"></div>
-            <div class="flex flex-col text-slate-200">
-              <div class="text-2xl font-extrabold">4%</div>
-              <div class="text-lg font-normal">Advisors</div>
-              <div class="text-sm font-normal">
-                We relied on advisors for the strategic & executive setup of
-                Pyros World - and we have greatly taken advantage of it.
-              </div>
-            </div>
-          </div>
+        
         </div>
       </div>
     </div>
-    <div class="shape-divider-top-1665696661 w-full"></div>
-    <svg
+    <!-- <div class="shape-divider-top-1665696661 w-full"></div> -->
+    <!-- <svg
       data-name="Layer 1"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 1200 120"
@@ -277,6 +291,7 @@
         d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
         class="bg-bgDark1 fill-bgDark1"
       ></path>
-    </svg>
+    </svg> -->
   </div>
 </section>
+</FadeInComponent>
